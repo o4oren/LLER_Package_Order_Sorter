@@ -18,7 +18,7 @@ namespace LLER_Package_Order_Sorter
                 {
                     var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                     contentXmlPath =
-                        appData + "\\Packages\\Microsoft Flight Simulator\\content.xml";
+                        appData + "\\Microsoft Flight Simulator\\content.xml";
                     if (!File.Exists(contentXmlPath))
                     {
                         throw new Exception("Cannot find Content.xml!");
