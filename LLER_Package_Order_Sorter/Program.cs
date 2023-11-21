@@ -40,7 +40,7 @@ namespace LLER_Package_Order_Sorter
                 {
                     // Find the 'navdata' node inside 'priorities'
                     XmlNode navdataNode = prioritiesNode.SelectSingleNode("//Package[@name='navigraph-navdata']");
-                    XmlNode llerNode = prioritiesNode.SelectSingleNode("//Package[@name='ftxdes-airport_ller-eilat']");
+                    XmlNode llerNode = prioritiesNode.SelectSingleNode("//Package[@name='ftxdes-airport-ller-eilat']");
 
                     if (navdataNode != null)
                     {
@@ -73,7 +73,7 @@ namespace LLER_Package_Order_Sorter
 
                         // Create a new entry for LLER node
                         XmlElement llerElement = xmlDoc.CreateElement("Package");
-                        llerElement.SetAttribute("name", "ftxdes-airport_ller-eilat");
+                        llerElement.SetAttribute("name", "ftxdes-airport-ller-eilat");
                         llerElement.SetAttribute("priority", (navdataPriority).ToString()); // Adjust priority
 
                         // Insert 'ftxdes-airport_ller-eilat' at the original level of 'navdata'
